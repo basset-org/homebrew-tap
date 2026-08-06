@@ -5,9 +5,8 @@ class Basset < Formula
   version "0.1.0"
   license :cannot_represent
   url "https://github.com/basset-org/basset-cli/releases/download/v0.1.0/basset-Darwin-universal"
-  sha256 "f0ae536fc47cd30d3738f5ad55fc77c4d89ac3fab92c907763edb074905d24d8"
+  sha256 "b03de8b5975a2e2d5c74a5f45ac19388e36fa1b28b4c765fcd8a048c5c9e15d6"
 
-  depends_on :macos
   depends_on macos: :sequoia
 
   livecheck do
@@ -17,6 +16,10 @@ class Basset < Formula
 
   def install
     bin.install "basset-Darwin-universal" => "basset"
+    # The url names a bare Mach-O rather than an archive, so the download
+    # carries the mode Homebrew's cache wrote rather than one an archive
+    # recorded, and lands at 0644.
+    chmod 0755, bin/"basset"
     generate_completions_from_executable(bin/"basset", "--generate-completion-script")
   end
 
