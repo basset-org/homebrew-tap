@@ -2,10 +2,10 @@
 class Basset < Formula
   desc "Live, on-demand iOS diagnostics"
   homepage "https://basset.dev"
-  version "0.1.1"
+  version "0.1.2"
   license :cannot_represent
-  url "https://github.com/basset-org/basset-cli/releases/download/v0.1.1/basset-Darwin-universal"
-  sha256 "d074c852cbb030c823cd5a255501f26acd33d05ca319e09b7e6d7641e265968d"
+  url "https://github.com/basset-org/basset-cli/releases/download/v0.1.2/basset-Darwin-universal"
+  sha256 "1022149b70b5f2e7d00875b1df2da71274881d47dd3d4fa008c555439b1ea4a0"
 
   depends_on macos: :sequoia
 
