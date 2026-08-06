@@ -5,7 +5,7 @@ class Basset < Formula
   version "0.1.2"
   license :cannot_represent
   url "https://github.com/basset-org/basset-cli/releases/download/v0.1.2/basset-Darwin-universal"
-  sha256 "1022149b70b5f2e7d00875b1df2da71274881d47dd3d4fa008c555439b1ea4a0"
+  sha256 "d961b75881f164ca2c402c82cf4041071c36af9aca7bf50b2b7d9f20550c7d90"
 
   depends_on macos: :sequoia
 
