@@ -2,8 +2,8 @@
 class Basset < Formula
   desc "Live, on-demand iOS diagnostics"
   homepage "https://basset.dev"
-  url "https://github.com/basset-org/basset-cli/releases/download/v0.4.3/basset-Darwin-universal"
-  sha256 "7dc98d1c00189047b4272360010123304a31c8d73848415d285dbc850cc81077"
+  url "https://github.com/basset-org/basset-cli/releases/download/v0.4.4/basset-Darwin-universal"
+  sha256 "964d9260575197a6a8fd3efa601f005aac8b48bc3cd8bbf06cbe40ee8ef5a21f"
   license :cannot_represent
 
   livecheck do
